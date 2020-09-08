@@ -12,6 +12,8 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.user.get_full_name()
+   
+
 
 class ShippingAddress(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)

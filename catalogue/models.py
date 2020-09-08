@@ -10,7 +10,7 @@ class ProductSupplier(models.Model):
     phone_number = models.IntegerField()
     id_number = models.IntegerField()
     date_added = models.DateTimeField()
-    profile_picture = models.ImageField()
+    profilProductReviewe_picture = models.ImageField()
 
     def __str__(self):
         return self.street_address
@@ -22,6 +22,9 @@ class ProductCategory(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = 'Product Categories'
 
 class Product(models.Model):
     title = models.CharField(max_length=50)
