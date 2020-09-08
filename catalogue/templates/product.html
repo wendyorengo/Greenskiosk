@@ -7,9 +7,10 @@
 </head>
 <body>
     {% for product in product_image %}
-        <img src="{{product.image.url}}" alt="image">
+        <img src="{{product.image.url}}" alt="image" height="300px" width="300px" class="images">
         <p>{{product.title}}</p>
         <p>{{product.Kiosk.currency}} {{product.selling_price}}</p>
+        
     {% endfor %}
     
 </body>
