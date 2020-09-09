@@ -10,5 +10,9 @@ def product(request):
     product_image = Product.objects.all()
     return render(request, 'product.html',{'product_image':product_image})
 
+def product_details(request):
+    description = Product.objects.all()
+    return render(request, 'details.html', {'description':description})
+
 
     

@@ -1,0 +1,15 @@
+{% load static %}
+{% for product in description %}
+
+       
+<div class="card  float-left" >
+    <img src="{{product.image.url}}" class="card-img-top" alt="images" style="width:270px;">
+    <div class="card-body">
+        <p class="card-title">{{product.title}}</p>
+        <p>{{product.description}}</p>
+       
+      </div>
+    </div>
+    </div>
+
+{% endfor %}

@@ -1,5 +1,25 @@
-img{
+h1{
+    color:red;
+}
+.card{
     float:left;
     width:33.3%;
-    margin-left: 50px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 60px;
+    height: 320px;
+    width: 300px;
+}
+.container{
+    margin-bottom: 20px;
+    width:100%;
+    
+}
+.card-title{
+    text-align: center;
+}
+.header{
+    background-color: black;
+}
+h3{
+    color:white;
 }

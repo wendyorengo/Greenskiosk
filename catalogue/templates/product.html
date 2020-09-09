@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="static/catalogue.css">
+    <link rel="stylesheet" href="{% static 'catalogue.css' %}">
     <title>GKiosk</title>
 </head>
 <body>
-    <div class="container">
+    
+        
         
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -23,8 +25,12 @@
       
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
+           
             <div class="item active">
+               
               <img src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2018/08/GettyImages-517801491-1200x630.jpg" alt="" style="width:100%; height:500px">
+              
+              <p></p>
             </div>
       
             <div class="item">
@@ -50,17 +56,25 @@
       
 
     
-    <div>
+    <div class="cont">
+        <h2 class="card-title">Fruits</h2>
         {% for product in product_image %}
-        
-        <img src="{{product.image.url}}" alt="image" height="300px" width="300px" class="images">
-        <p>{{product.title}}</p>
-        <p>{{product.Kiosk.currency}} {{product.selling_price}}</p>
+
+       
+        <div class="card  float-left" >
+            <img src="{{product.image.url}}" class="card-img-top" alt="images" style="width:270px;">
+            <div class="card-body">
+                <p class="card-title">{{product.title}}</p>
+                <p class="card-title">{{product.kiosk.currency}} {{product.selling_price}}</p>
+               
+              </div>
+            </div>
+            </div>
 
         {% endfor %}
         
         
-    </div>
+    
         
         
    
