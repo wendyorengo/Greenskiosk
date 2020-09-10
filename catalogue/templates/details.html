@@ -1,15 +1,29 @@
 {% load static %}
-{% for product in description %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'catalogue.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  {% for product in products %}
 
        
-<div class="card  float-left" >
-    <img src="{{product.image.url}}" class="card-img-top" alt="images" style="width:270px;">
-    <div class="card-body">
-        <p class="card-title">{{product.title}}</p>
-        <p>{{product.description}}</p>
+<div class="cards" >
+    <img src="{{product.image.url}}" class="image" alt="images" style="width:350px;">
+    <div class="card1">
+        <p class="paragraph">{{product.title}}</p>
+        <p class="paragraph">{{product.kiosk.currency}} {{product.selling_price}}</p>
+        <p class="para">{{product.description}}</p>
        
       </div>
     </div>
     </div>
 
 {% endfor %}
+  
+</body>
+</html>
+

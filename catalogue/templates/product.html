@@ -34,7 +34,9 @@
             </div>
       
             <div class="item">
+              
               <img src="https://thumbs.dreamstime.com/b/pile-chinese-kales-sold-supermarket-pile-chinese-kales-sold-market-supermarket-138657500.jpg" alt="" style="width:100%; height:500px">
+              <!-- <p class="avocado">Avocados</p> -->
             </div>
           
             <div class="item">
@@ -64,8 +66,9 @@
         <div class="card  float-left" >
             <img src="{{product.image.url}}" class="card-img-top" alt="images" style="width:270px;">
             <div class="card-body">
-                <p class="card-title">{{product.title}}</p>
+               <a href="/products/{{product.id}}/" class="link">{{product.title}}</a>  
                 <p class="card-title">{{product.kiosk.currency}} {{product.selling_price}}</p>
+                <!-- <a href="/description" class="btn btn-danger" role="button">View</a> -->
                
               </div>
             </div>
