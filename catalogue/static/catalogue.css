@@ -7,7 +7,7 @@ h1{
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 60px;
     height: 320px;
-    width: 300px;
+    width: 250px;
 }
 .container{
     margin-bottom: 20px;
@@ -17,6 +17,7 @@ h1{
 
 .card-title{
     text-align: center;
+    margin-bottom:30px;
 }
 .header{
     background-color: black;
@@ -26,22 +27,61 @@ h3{
 }
 .link{
     text-align: center;
-    
+    margin-top:30px;
     margin-left: 120px;
     color:black;
     text-decoration: none;
 }
 .text-top-image{
     z-index: 100;
-}
+}s
 .paragraph{
-    margin-left: 50px;
-    
+    margin-left: 50px; 
+    margin-left: 370px;
+    margin-top:-300px;
 }
+
 .para{
     margin-left: 370px;
     margin-top:-300px;
     
 }
 
+form{
+    width:500px;
+    margin-left:250px;
+}
+.head{
+    text-align: center;
+}
+.cards{
+    margin-left: 100px;
+    height: 320px;
+    width: 300px;
+
+}
+.button {
+    border: none;
+    color: white;
+    padding: 4px 16px;
+    margin-left: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 40px 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4D5E08; 
+    text-align: center;
+  }
+  
+  .button1:hover {
+    background-color: #4D5E08;
+    color: white;
+  }
 

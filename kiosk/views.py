@@ -1,26 +1,19 @@
 from django.shortcuts import render,redirect
 from .forms import KioskForm
-from catalogue import views
+from catalogue.views import upload_product
+
 
 # Create your views here.
-def upload_kiosk(request):
-    if request.method == "Post":
-        form = KioskForm(request.POST, request.FIles)
+def  upload_kiosk(request):
+    if request.method == 'POST':
+        form = KioskForm(request.POST, request.FILES)
+        
         if form.is_valid():
             form.save()
-            return redirect('product')
+        return redirect('uploads')
     else:
         form = KioskForm
-        return render(request, 'kiosk_upload.html', {'form':form})
+        return render (request, 'kiosk_upload.html', {'form': form})
 
-def upload_owner(request):
-    if request.method == "Post":
-        form = KioskownerForm(request.POST, request.Files)
-        if form.is_valid():
-            form.save()
-            return redirect('product')
-    else:
-        form = KioskownerForm
-        return render(request, 'kioskowner.html', {'form':form})
-            
+
 

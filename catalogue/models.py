@@ -35,10 +35,12 @@ class Product(models.Model):
     supplier = models.ForeignKey(ProductSupplier, on_delete=models.CASCADE)
     kiosk = models.ForeignKey(Kiosk, on_delete=models.CASCADE)
     number_in_stock = models.IntegerField()
-    image = models.ImageField(upload_to='gallery' )
+    image = models.ImageField(upload_to="gallery")
+    
 
     def __str__(self):
         return self.title
+
 
 
 class ProductReview(models.Model):

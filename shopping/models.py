@@ -7,7 +7,7 @@ from customers.models import Customer
 # Create your models here.
 
 class Cart(models.Model):
-    products = models.ForeignKey(Product,on_delete=models.CASCADE)
+    products = models.ManyToManyField(Product)
     date_created = models.DateTimeField()
     total_price = models.DecimalField(max_digits=6, decimal_places=2)
     status = models.CharField(max_length=100)

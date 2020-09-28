@@ -15,16 +15,15 @@ def product_details(request,product_id):
     products = Product.objects.filter(id=product_id)
     return render(request, 'details.html', {'products':products})
 
-def upload_product(request):
+def  upload_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-
             form.save()
-        return redirect('product')
+            return redirect('product')
     else:
-            form = ProductForm
-            return render (request, 'upload_product.html', {'form': form})
+        form = ProductForm
+    return render (request, 'upload_product.html', {'form': form})
 
 
 
