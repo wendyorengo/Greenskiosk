@@ -26,6 +26,9 @@ def  upload_product(request):
     return render (request, 'upload_product.html', {'form': form})
 
 
+    
+
+
 
 
     

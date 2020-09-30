@@ -84,4 +84,11 @@ form{
     background-color: #4D5E08;
     color: white;
   }
-
+  nav{
+      background-color: chartreuse;
+      font-size: 0;
+      
+  }
+#myCarousel{
+  
+}
