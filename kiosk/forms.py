@@ -1,5 +1,5 @@
 from django import forms
-from .models import Kiosk, KioskOwner
+from .models import Kiosk
 
 
 class KioskForm(forms.ModelForm):
